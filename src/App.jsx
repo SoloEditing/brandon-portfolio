@@ -155,16 +155,16 @@ function Home() {
   {/* GOTHIC EDITORIAL */}
   <div className="project photo-project reveal" id="photo">
 
-    <div className="project-image portrait-project-image">
-      <img
-        src="/images/gothic-editorial.jpg"
-        alt="Gothic editorial portrait photography"
-      />
+<Link to="/photo" className="project-image portrait-project-image">
+  <img
+    src="/images/gothic-editorial.jpg"
+    alt="Gothic editorial portrait photography"
+  />
 
-      <div className="project-hover">
-        <span>VIEW PHOTOGRAPHY</span>
-      </div>
-    </div>
+  <div className="project-hover">
+    <span>VIEW PHOTOGRAPHY</span>
+  </div>
+</Link>
 
     <div className="project-info">
       <div>
@@ -490,9 +490,23 @@ function Home() {
             AVAILABLE FOR SELECT PROJECTS
           </p>
 
-          <a href="mailto:soloediting.business@gmail.com?subject=Project%20Inquiry">
-  EMAIL ME ↗
-</a>
+          <div className="contact-email">
+  <span>SOLOEDITING.BUSINESS@GMAIL.COM</span>
+
+  <button
+    type="button"
+    onClick={(e) => {
+      navigator.clipboard.writeText("soloediting.business@gmail.com")
+      e.currentTarget.textContent = "COPIED ✓"
+
+      setTimeout(() => {
+        e.currentTarget.textContent = "COPY EMAIL ↗"
+      }, 2000)
+    }}
+  >
+    COPY EMAIL ↗
+  </button>
+</div>
 
         </div>
 

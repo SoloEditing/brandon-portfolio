@@ -3337,3 +3337,41 @@ a {
   }
 
 }
+/* CONTACT EMAIL */
+
+.contact-email {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 32px;
+}
+
+.contact-email span {
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.contact-email button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.contact-email button:hover {
+  opacity: 0.55;
+}
+
+@media (max-width: 800px) {
+  .contact-email {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
