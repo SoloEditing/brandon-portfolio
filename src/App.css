@@ -708,13 +708,10 @@ a {
   }
 
   .navbar nav a {
-    font-size: 0.52rem;
+    font-size: 0.58rem;
   }
 
-  .navbar nav a:nth-child(2),
-  .navbar nav a:nth-child(3) {
-    display: none;
-  }
+ 
 
   .hero-image {
     min-height: 600px;
