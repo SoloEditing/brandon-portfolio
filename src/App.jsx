@@ -62,15 +62,19 @@ function Home() {
 
             <h1>BRANDON</h1>
 
-            <p className="roles">
-              VIDEO EDITOR
-              <span>·</span>
-              PHOTOGRAPHER
-              <span>·</span>
-              VIDEOGRAPHER
-              <span>·</span>
-              CHANNEL MANAGER
-            </p>
+          <div className="roles">
+  <div className="roles-line">
+    VIDEO EDITOR
+    <span>·</span>
+    PHOTOGRAPHER
+  </div>
+
+  <div className="roles-line">
+    VIDEOGRAPHER
+    <span>·</span>
+    CHANNEL MANAGER
+  </div>
+</div>
           </div>
         </div>
 

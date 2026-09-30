@@ -168,8 +168,14 @@ a {
   margin: 0 10px;
   color: var(--orange);
 }
-
-
+.roles-line {
+  display: inline;
+}
+.roles-line + .roles-line::before {
+  content: " · ";
+  color: var(--orange);
+  margin: 0 10px;
+}
 /* =========================
    HERO FOOTER
 ========================= */
@@ -725,12 +731,24 @@ a {
     font-size: 3rem;
   }
 
-  .roles {
-    max-width: 350px;
-    margin: 18px auto 0;
-    line-height: 2;
-  }
+.roles {
+  width: 100%;
+  max-width: 320px;
+  margin: 18px auto 0;
+  padding: 0 10px;
+  box-sizing: border-box;
+  line-height: 1.8;
+  font-size: 0.58rem;
+  text-align: center;
+}
 
+.roles-line {
+  display: block;
+  white-space: nowrap;
+}
+.roles-line + .roles-line::before {
+  content: none;
+}
   .hero-footer {
     min-height: 90px;
     grid-template-columns: 1fr 1fr;
